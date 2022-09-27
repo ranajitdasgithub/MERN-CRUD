@@ -1,0 +1,33 @@
+//Heroku
+1. log in
+2. install heroku cli(to check type in command "heroku"/heroku --v)
+(cli- command line interface)
+
+//Deployment
+1. in package.json-> script-> "start":"node index.js",
+2. .gitignore file(/node_modules, .env)
+3. git init(make sure i use)(if you are not any repositary)
+4. git status(to check env,node_modules are ignored or not)
+
+5. heroku login
+6. anykey
+7. git add .
+8. git status
+9. git commit
+10. heroku create
+11. git push heroku main/master
+
+<.......................>
+
+1. goto heroku dashboard
+2. open your browser link and click
+3. goto setting
+4. goto config vars
+5. add env file files
+6. goto index.js PORT(const PORT = process.env.PORT || 8080)
+7. git add .
+8. git commit -m"...."
+9. git push heroku main
+
+10. in case any changes in env file/ or adding new env file in the dashboard then
+goto server-> setting-> more -> restart all dynos
