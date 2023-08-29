@@ -34,7 +34,7 @@ notesController.delete("/delete/:noteId", async (req, res) => {
   if (deleteNote) {
     res.status(200).send("Deleted successfully");
   } else {
-    res.send("Couldn't delted");
+    res.send("Couldn't deleted");
   }
 });
 
